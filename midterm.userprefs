@@ -1,10 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\PickUp.cs">
     <Files>
-      <File FileName="Assets\scripts\PlayerMovement.cs" Line="37" Column="3" />
-      <File FileName="Assets\scripts\TransformMove.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\PlayerMovementMouse.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\PlayerMovement.cs" Line="59" Column="21" />
+      <File FileName="Assets\scripts\PickUp.cs" Line="18" Column="58" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
