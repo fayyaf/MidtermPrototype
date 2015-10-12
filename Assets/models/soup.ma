@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
 //Name: soup.ma
-//Last modified: Mon, Oct 12, 2015 02:00:53 PM
+//Last modified: Mon, Oct 12, 2015 05:35:12 PM
 //Codeset: 1252
 requires maya "2016";
 requires "stereoCamera" "10.0";
@@ -14,8 +14,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "44B0B22D-47FD-B116-71FA-A7AB3FED47D9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -3.9237444748771217 1.1530263926856916 0.88817888890164487 ;
-	setAttr ".r" -type "double3" -27.938352729580423 -784.60000000017919 -3.7075007778566983e-015 ;
+	setAttr ".t" -type "double3" -4.2228403347432728 0.99743064623530731 -0.41133362888334912 ;
+	setAttr ".r" -type "double3" -24.338352729715687 -815.80000000013013 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "2C342363-4064-84E1-BFBC-F294EE1C1E34";
 	setAttr -k off ".v" no;

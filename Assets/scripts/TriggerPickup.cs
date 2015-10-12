@@ -32,6 +32,7 @@ public class TriggerPickup : MonoBehaviour {
 		// parenting the pickup to the player
 		if (activator.tag == "Pickup" && Input.GetKeyDown(KeyCode.F))
 		{
+			//Debug.Log ("picking up");
 			activator.transform.SetParent (transform);
 			if (currentlyHolding != null) // if player is holding an object
 			{
