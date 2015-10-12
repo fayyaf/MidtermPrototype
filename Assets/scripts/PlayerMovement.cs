@@ -32,9 +32,8 @@ public class PlayerMovement : MonoBehaviour
 			// good for smooth movements because numbers aren't used
 		}
 		*/
-
 		
-		float mouseX = Input.GetAxis ("Mouse X"); // number from -1 to 1f
+		//float mouseX = Input.GetAxis ("Mouse X"); // number from -1 to 1f
 		float mouseY = -Input.GetAxis ("Mouse Y");
 		
 		//transform.Rotate (mouseY, mouseX, 0f); // turn left or right based on mouseX, up or down based on mouseY
@@ -51,7 +50,9 @@ public class PlayerMovement : MonoBehaviour
 		float yVelocity = rbody.velocity.y; // remembers our y-velocity
 		rbody.velocity = transform.TransformDirection ( inputVector ) * moveSpeed;
 		rbody.velocity += new Vector3(0f, yVelocity, 0f); // adding our y-velocity back
-		Debug.Log ("Velocity: " + rbody.velocity);
+		
+		inputVector = new Vector3(inputVector.x, 0, inputVector.z);
+		//Debug.Log ("Velocity: " + rbody.velocity);
 	}
 
 	void OnCollisionStay (Collision coll)
@@ -60,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
 		float jump = Input.GetButtonDown ("Jump") ? 0.5f : 0f;
 		inputVector = new Vector3(Input.GetAxis ("Horizontal"), jump, Input.GetAxis("Vertical"));
-		Debug.Log ("Input: " + inputVector);
+		//Debug.Log ("Input: " + inputVector);
 	}
 	
 	void OnCollisionExit(Collision coll)
