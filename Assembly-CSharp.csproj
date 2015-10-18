@@ -45,11 +45,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\scripts\DifficultyChange.cs" />
      <Compile Include="Assets\scripts\EndingTrigger.cs" />
+     <Compile Include="Assets\scripts\IntroMenuStart.cs" />
      <Compile Include="Assets\scripts\PickUp.cs" />
      <Compile Include="Assets\scripts\PlayerMovement.cs" />
-     <Compile Include="Assets\scripts\PlayerMovementMouse.cs" />
      <Compile Include="Assets\scripts\RestartButton.cs" />
+     <Compile Include="Assets\scripts\RestartScript.cs" />
      <Compile Include="Assets\scripts\SoundTrigger.cs" />
      <Compile Include="Assets\scripts\Timer.cs" />
      <Compile Include="Assets\scripts\TransformMove.cs" />

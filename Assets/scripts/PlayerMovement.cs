@@ -34,11 +34,11 @@ public class PlayerMovement : MonoBehaviour
 		*/
 		
 		//float mouseX = Input.GetAxis ("Mouse X"); // number from -1 to 1f
-		float mouseY = -Input.GetAxis ("Mouse Y");
+		//float mouseY = -Input.GetAxis ("Mouse Y");
 		
 		//transform.Rotate (mouseY, mouseX, 0f); // turn left or right based on mouseX, up or down based on mouseY
 		
-		myCamera.Rotate (mouseY, 0f, 0f); //rotate camera up and down (separately from player)
+		//myCamera.Rotate (mouseY, 0f, 0f); //rotate camera up and down (separately from player)
 		//myCamera.Rotate (0f, mouseX, 0f); // rotate camera left and right (separately from player)
 		
 	}
