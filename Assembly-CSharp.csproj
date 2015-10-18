@@ -53,6 +53,7 @@
      <Compile Include="Assets\scripts\RestartButton.cs" />
      <Compile Include="Assets\scripts\RestartScript.cs" />
      <Compile Include="Assets\scripts\SoundTrigger.cs" />
+     <Compile Include="Assets\scripts\Spin.cs" />
      <Compile Include="Assets\scripts\Timer.cs" />
      <Compile Include="Assets\scripts\TransformMove.cs" />
      <Compile Include="Assets\scripts\TriggerPickup.cs" />
