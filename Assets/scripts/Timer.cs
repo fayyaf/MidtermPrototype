@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		string textBuffer = "Time Remaining: ";
+		string textBuffer = "Time Remaining To Grab Soup: ";
 
 		time -= Time.deltaTime;
 

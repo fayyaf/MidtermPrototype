@@ -6,10 +6,12 @@ public class TriggerPickup : MonoBehaviour {
 	public Transform parent;
 	private Transform currentlyHolding;
 	public static bool winstate;
+	private Rigidbody rb;
 
 	void Start()
 	{
 		winstate = false;
+		rb = GetComponent<Rigidbody>();
 	}
 
 	void Update()
@@ -32,6 +34,8 @@ public class TriggerPickup : MonoBehaviour {
 		// parenting the pickup to the player
 		if (activator.tag == "Pickup" && Input.GetKeyDown(KeyCode.F))
 		{
+			GetComponent<Renderer>().material.color = Color.blue;
+
 			//Debug.Log ("picking up");
 			activator.transform.SetParent (transform);
 			if (currentlyHolding != null) // if player is holding an object
